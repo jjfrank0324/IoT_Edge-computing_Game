@@ -1,0 +1,17 @@
+T6108 6033:387 SEGGER J-Link V6.48a Log File (0000ms, 2783566ms total)
+T6108 6033:387 DLL Compiled: Jul 30 2019 15:16:09 (0000ms, 2783566ms total)
+T6108 6033:387 Logging started @ 2021-05-09 19:29 (0000ms, 2783566ms total)
+T6108 6033:387 JLINK_EMU_SelectByUSBSN(SerialNo = 801027310)  returns 0xFFFFFFFF (0003ms, 2783569ms total)
+T6108 6033:390 JLINK_OpenEx(...)
+Firmware: J-Link EDU Mini V1 compiled Jun  9 2020 13:36:46
+Hardware: V1.00
+S/N: 801027238
+Feature(s): FlashBP, GDB
+TELNET listener socket opened on port 19021WEBSRV 
+Starting webserver (0319ms, 2783888ms total)
+T6108 6033:390 WEBSRV Webserver running on local port 19081 (0319ms, 2783888ms total)
+T6108 6033:390   returns O.K. (0319ms, 2783888ms total)
+T6108 6033:709 JLINK_ExecCommand("ProjectFile = K:\sam\A11PCB\WINC1500_HTTP_DOWNLOADER_EXAMPLE1\jlink.config", ...).   returns 0x00 (0001ms, 2783889ms total)
+T6108 6033:742 JLINK_Close() (0001ms, 2783890ms total)
+T6108 6033:742  (0001ms, 2783890ms total)
+T6108 6033:742 Closed (0001ms, 2783890ms total)
