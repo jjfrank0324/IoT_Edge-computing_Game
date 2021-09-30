@@ -2,7 +2,7 @@
 * @file      BootMain.c
 * @brief     Main file for the ESE516 bootloader. Handles updating the main application
 * @details   Main file for the ESE516 bootloader. Handles updating the main application
-* @author    Eduardo Garcia
+* @author    Jiahong Ji
 * @date      2020-02-15
 * @version   2.0
 * @copyright Copyright University of Pennsylvania

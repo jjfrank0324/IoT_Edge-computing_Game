@@ -1,8 +1,8 @@
 /**************************************************************************//**
 * @file      I2cDriver.h
 * @brief     FreeRTOS compatible driver for I2C communications
-* @author    Eduardo Garcia
-* @date      2020-04-05
+* @author    Jiahong Ji
+* @date      Jiahong Ji
 
 ******************************************************************************/
 

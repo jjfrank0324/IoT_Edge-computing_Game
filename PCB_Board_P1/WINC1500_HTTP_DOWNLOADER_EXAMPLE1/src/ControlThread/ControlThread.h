@@ -1,8 +1,8 @@
 /**************************************************************************//**
 * @file      ControlThread.h
 * @brief     Thread code for the ESE516 Online game control thread
-* @author    You!
-* @date      2020-04-015
+* @author    Jiahong Ji
+* @date      2021-05-09
 
 ******************************************************************************/
 

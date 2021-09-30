@@ -2,7 +2,7 @@
 * @file      ControlThread.c
 * @brief     Thread code for the ESE516 Online game control thread
 * @author    Jiahong Ji
-* @date      2021-0509
+* @date      2021-05-09
 
 ******************************************************************************/
 
@@ -54,11 +54,11 @@ int steps[6];		///< the steps player one has goes through
 
 /**************************************************************************//**
 * @fn		void vUiHandlerTask( void *pvParameters )
-* @brief	STUDENT TO FILL THIS
-* @details 	student to fill this
+* @brief	The Game thread
+* @details 		control the status of the game, 
                 				
-* @param[in]	Parameters passed when task is initialized. In this case we can ignore them!
-* @return		Should not return! This is a task defining function.
+* @param[in]	Parameters passed when task is initialized.
+* @return		N/A
 * @note         
 *****************************************************************************/
 void vControlHandlerTask( void *pvParameters )
@@ -68,13 +68,8 @@ void vControlHandlerTask( void *pvParameters )
 	//generate random seeds, Need a better was of get the initial random number
 	srand(50);
 
-	//Initialize Queues
-	xQueueGameBufferIn = xQueueCreate( 2, sizeof( struct GameDataPacket ) );
-	xQueueRgbColorBuffer = xQueueCreate( 2, sizeof( struct RgbColorPacket ) );
 
-	if(xQueueGameBufferIn == NULL || xQueueRgbColorBuffer == NULL){
-		SerialConsoleWriteString("ERROR Initializing Control Data queues!\r\n");
-	}
+
 	controlState = CONTROL_WAIT_FOR_GAME; //Initial state
 	int i = 0;
 	while(1)

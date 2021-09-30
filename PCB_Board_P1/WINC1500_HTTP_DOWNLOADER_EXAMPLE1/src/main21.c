@@ -174,14 +174,7 @@ if (xTaskCreate(vWifiTask, "WIFI_TASK", WIFI_TASK_SIZE, NULL, WIFI_PRIORITY, &wi
 snprintf(bufferPrint, 64, "Heap after starting WIFI: %d\r\n", xPortGetFreeHeapSize());
 SerialConsoleWriteString(bufferPrint);
 
-/*
-if(xTaskCreate(vUiHandlerTask, "UI Task", UI_TASK_SIZE, NULL, UI_TASK_PRIORITY, &uiTaskHandle) != pdPASS) {
-	SerialConsoleWriteString("ERR: UI task could not be initialized!\r\n");
-}
 
-snprintf(bufferPrint, 64, "Heap after starting UI Task: %d\r\n", xPortGetFreeHeapSize());
-SerialConsoleWriteString(bufferPrint);
-*/
 if(xTaskCreate(vControlHandlerTask, "Control Task", CONTROL_TASK_SIZE, NULL, CONTROL_TASK_PRIORITY, &controlTaskHandle) != pdPASS) {
 	SerialConsoleWriteString("ERR: Control task could not be initialized!\r\n");
 }
