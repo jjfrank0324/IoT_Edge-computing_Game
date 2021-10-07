@@ -1,7 +1,7 @@
 /**************************************************************************/ /**
 * @file      main.c
 * @brief     Main application entry point
-* @author    Eduardo Garcia
+* @author    Jiahong Ji
 * @date      2020-02-15
 * @copyright Copyright Bresslergroup\n
 *            This file is proprietary to Bresslergroup.
